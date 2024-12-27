@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gugu's Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main id="app">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="container">
+                <h1 class="title">GUGU's COOKBOOK 🎀</h1>
+                <div class="icon-container">
+                    <iframe src="https://giphy.com/embed/26gs9pAxl9vEwgfNC"
+                      width="100%"
+                      height="100%" 
+                      frameBorder="0" 
+                      class="giphy-embed" 
+                      allowFullScreen></iframe>
+                </div>
+                <h1>Learn to cook delicious meals right now.</h1>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button id="start-cooking" class="btn">
+                    Start cooking
+                    <i class="fas fa-hat-chef"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Recipes List Page -->
+        <div id="recipes" class="page">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="#" id="back-to-home"><i class="fas fa-home"></i></a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span >Recipes</span>
+                </div>
+                <div id="recipe-list"></div>
+            </div>
+        </div>
+
+        <!-- Recipe Detail Page -->
+        <div id="recipe-detail" class="page">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="#" id="back-to-recipes">Recipes</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span id="recipe-category"></span>
+                </div>
+                <div class="recipe-header">
+                    <h1 id="recipe-title"></h1>
+                    <div class="recipe-time">
+                        <i class="fas fa-clock"></i>
+                        <span id="recipe-time"></span>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <h2>Ingredients - <span id="ingredient-count"></span></h2>
+                    <div id="ingredient-list" class="ingredient-grid"></div>
+                </div>
+                <div class="steps">
+                    <h2>Cooking Steps</h2>
+                    <ol id="step-list"></ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
