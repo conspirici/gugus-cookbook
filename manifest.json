@@ -1,0 +1,22 @@
+{
+    "name": "Gugu's Cookbook",
+    "short_name": "Cookbook",
+    "description": "Learn to cook delicious meals with Gugu's Cookbook.",
+    "icons": [
+      {
+        "src": "assets/cc6a1f9635fd7eb8cb97a96384d5b52c.jpg",
+        "type": "image/jpg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/cc6a1f9635fd7eb8cb97a96384d5b52c.jpg",
+        "type": "image/jpg",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFF5E4",
+    "theme_color": "#E69FAA"
+  }
+  
